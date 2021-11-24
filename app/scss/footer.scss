@@ -1,0 +1,40 @@
+.footer {
+  &__container {
+    padding: 40px 0;
+  }
+  &__btn {
+    display: flex;
+    border-color: $white;
+    color: $white;
+    max-width: 100px;
+    &::before {
+      content: '>';
+      display: block;
+      text-transform: lowercase;
+      margin-left: 2px;
+      transform: rotate(-90deg);
+      font-weight: bold;
+    }
+    @media (max-width: $md-sm) {
+      font-size: 12px;
+    }
+  }
+  &__info {
+    max-width: 500px;
+    @media (max-width: $md-sm) {
+      padding: 0 10px;
+    }
+  }
+  &__link {
+    text-decoration: none;
+    color: $white;
+    font-size: 14px;
+
+    @media (max-width: $md-sm) {
+      font-size: 12px;
+      &:not(:last-child) {
+        margin-bottom: 6px;
+      }
+    }
+  }
+}

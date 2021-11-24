@@ -1,0 +1,23 @@
+.wellcome {
+  &__container {
+			padding: 0;
+  }
+  &__body {
+    background: url(../images/bg-main.png) center no-repeat;
+    background-size: cover;
+    padding: 150px 15px;
+  }
+  &__logo {
+    margin-bottom: 30px;
+  }
+  &__title {
+    @media (max-width: $md-md) {
+      font-size: 18px;
+    }
+  }
+  &__text {
+    @media (max-width: $md-md) {
+      font-size: 14px;
+    }
+  }
+}

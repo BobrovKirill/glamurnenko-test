@@ -1,0 +1,44 @@
+.header {
+	margin-bottom: -64px;
+	&.fixed-top{
+		background-color:rgba(0, 0, 0, 0.9)
+	}
+  &__nav {
+    @media (max-width: $md-lg) {
+      display: none;
+			font-size: 14px;
+    }
+		&.active {
+			display: flex;
+			position: absolute;
+			top: 100%;
+			left: -15px;
+			background-color: rgba(0, 0, 0, 0.9);
+			padding: 0 55px 0 35px;
+		}
+  }
+  &__contacts {
+    width: 300px;
+    @media (max-width: $md-lg) {
+      width: auto;
+    }
+  }
+  &__social {
+    padding-right: 10px;
+    & img {
+      &:not(:last-child) {
+        margin-right: 4px;
+      }
+    }
+  }
+  &__tels {
+    @media (max-width: $md-xs) {
+      font-size: 12px;
+    }
+  }
+}
+.nav-item {
+	&:hover{
+		color: $dark;
+	}
+}

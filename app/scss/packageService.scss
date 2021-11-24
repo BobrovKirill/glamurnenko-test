@@ -1,0 +1,56 @@
+.package-service {
+  &__container {
+    padding: 40px 0;
+  }
+  &__title {
+    padding: 20px 0;
+  }
+  &__cards {
+    @media (max-width: $md-xl) {
+      &:not(:last-child) {
+        margin-bottom: 15px;
+      }
+    }
+  }
+  &__card {
+    width: 300px;
+    border-width: 3px;
+    border-radius: 0;
+    padding: 40px;
+    transition: all 0.3s;
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 10px 5px rgba(59, 59, 59, 0.5);
+      border-color: rgba(59, 59, 59, 0.5);
+    }
+  }
+  &__title-card {
+    & span {
+      font-size: 24px;
+    }
+  }
+  &__text-card {
+  }
+  &__prices {
+    font-size: 20px;
+  }
+  &__discount {
+    margin-bottom: 10px;
+    &::before {
+      content: '';
+      display: block;
+      height: 2px;
+      width: 140%;
+      background-color: rgba(255, 0, 0, 0.7);
+      position: absolute;
+      bottom: 50%;
+      left: -10px;
+      transform: rotate(-10deg);
+    }
+  }
+  &__price-box {
+  }
+  &__btn {
+    margin-top: 20px;
+  }
+}

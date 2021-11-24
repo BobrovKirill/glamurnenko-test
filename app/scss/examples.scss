@@ -1,0 +1,35 @@
+.examples {
+  &__container {
+    padding: 40px 0;
+  }
+  &__body {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  &__title {
+    padding: 20px 15px;
+  }
+  &__item {
+    padding: 0 15px;
+    margin-top: 30px;
+  }
+  &__img {
+    flex: 0 0 200px;
+    @media (max-width: $md-md) {
+      flex: 0 0 auto;
+    }
+    & img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  &__text {
+    flex: 0 0 400px;
+    padding-left: 35px;
+    font-size: 24px;
+    @media (max-width: $md-md) {
+      flex: 0 0 auto;
+    }
+  }
+}

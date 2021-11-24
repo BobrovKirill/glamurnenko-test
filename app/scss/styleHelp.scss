@@ -1,0 +1,42 @@
+.style-help {
+  &__container {
+    padding: 35px 0;
+  }
+  &__band {
+    box-shadow: 0px 2px 7px 2px rgba(0, 0, 0, 0.507);
+
+    height: 25px;
+    width: 210px;
+
+    top: 30px;
+    left: -60px;
+    transform: rotate(-45deg);
+    @media (max-width: $md-sm) {
+      top: 15px;
+      left: -70px;
+      font-size: 14px;
+    }
+  }
+  &__title {
+    @media (max-width: $md-sm) {
+      font-size: 18px;
+      padding: 0 30px 0 30px;
+    }
+  }
+  &__text {
+    margin-top: 25px;
+    max-width: 700px;
+    padding: 0 15px;
+    @media (max-width: $md-sm) {
+      margin-top: 10px;
+      font-size: 14px;
+    }
+  }
+  &__img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+  &__aboutImg {
+  }
+}
